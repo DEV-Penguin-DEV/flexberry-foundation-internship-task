@@ -1,0 +1,67 @@
+.stops-filter {
+  width: 100%;
+  height: fit-content;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.stops-filter__title {
+  line-height: 12px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.stops-filter__inputs-container {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  border: none;
+}
+
+.stops-filter__input-container {
+  padding: 10px 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #F1FCFF;
+  }
+}
+
+.stops-filter__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+
+  & + &-title {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  & + &-title::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #9ABBCE;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+
+  &:checked + &-title::before {
+    border-color: @main-color;
+    background: url("../pictures/svg/Shape.svg") no-repeat center;
+  }
+}

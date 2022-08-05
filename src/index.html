@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aviasales</title>
+  </head>
+
+  <body class="page__body">
+    <header class="main-header">
+      <img class="main-header__logo" src="pictures/Logo.png" alt="Логотип." width="65" height="70">
+    </header>
+
+    <main class="main-container">
+      <section class="choose-tickets">
+        <form class="stops-filter" action="index.html" method="get" autocomplete="off">
+          <p class="stops-filter__title">Количество пересадок</p>
+          <fieldset class="stops-filter__inputs-container">
+            <div class="stops-filter__input-container">
+              <input class="stops-filter__input" type="checkbox" name="all-stops-options" id="all-stops-options">
+              <label class="stops-filter__input-title" for="all-stops-options">Все</label>
+            </div>
+
+            <div class="stops-filter__input-container">
+              <input class="stops-filter__input" type="checkbox" name="without-stops" id="without-stops">
+              <label class="stops-filter__input-title" for="without-stops">Без пересадок</label>
+            </div>
+
+            <div class="stops-filter__input-container">
+              <input class="stops-filter__input" type="checkbox" name="one-stop" id="one-stop">
+              <label class="stops-filter__input-title" for="one-stop">1 пересадка</label>
+            </div>
+
+            <div class="stops-filter__input-container">
+              <input class="stops-filter__input" type="checkbox" name="two-stops" id="two-stops">
+              <label class="stops-filter__input-title" for="two-stops">2 пересадки</label>
+            </div>
+
+            <div class="stops-filter__input-container">
+              <input class="stops-filter__input" type="checkbox" name="three-stops" id="three-stops">
+              <label class="stops-filter__input-title" for="three-stops">3 пересадки</label>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="filter-and-tickets-container">
+          <form class="filters-form" action="index.html" method="get" autocomplete="off">
+            <button type=button class="filters-form__filter filters-form__filter--active" id="filter-cheapest">Самый
+              дешевый</button>
+            <button type=button class="filters-form__filter" id="filter-fastest">Самый быстрый</button>
+            <button type=button class="filters-form__filter" id="filter-optimal">Оптимальный</button>
+          </form>
+
+          <div class="tickets-container tickets">
+            <ul class="tickets__list">
+              <li class="tickets__item ticket">
+                <div class="ticket__price-and-img-container">
+                  <p class="ticket__price">13 400 Р</p>
+                  <img src="" alt="Логотип авиакомпании." class="ticket__airline-logo">
+                </div>
+
+                <div class="ticket__fly-description fly-description">
+                  <div class="fly-description__to fly-description__container">
+                    <div class="fly-description__airports airports fly-description__info-container">
+                      <p class="airports__title fly-description__title">MOW – HKT</p>
+                      <p class="airports__content fly-description__text">---</p>
+                    </div>
+
+                    <div class="fly-description__time tim fly-description__info-container">
+                      <p class="time__title fly-description__title">В пути</p>
+                      <p class="time__content fly-description__text">---</p>
+                    </div>
+
+                    <div class="fly-description__stops stops fly-description__info-container">
+                      <p class="stops__title fly-description__title">2 пересадки</p>
+                      <p class="stops__content fly-description__text">---</p>
+                    </div>
+                  </div>
+
+                  <div class="fly-description__return fly-description__container">
+                    <div class="fly-description__airports airports fly-description__info-container">
+                      <p class="airports__title fly-description__title">MOW – HKT</p>
+                      <p class="airports__content fly-description__text">---</p>
+                    </div>
+
+                    <div class="fly-description__time time fly-description__info-container">
+                      <p class="time__title fly-description__title">В пути</p>
+                      <p class="time__content fly-description__text">---</p>
+                    </div>
+
+                    <div class="fly-description__stops stops fly-description__info-container">
+                      <p class="stops__title fly-description__title">2 пересадки</p>
+                      <p class="stops__content fly-description__text">---</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="tickets__button-more">Показать еще 5 билетов!</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+
+    </footer>
+
+    <script src="js/main.js" type="module" ></script>
+  </body>
+
+</html>
